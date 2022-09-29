@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="app.css">
-</head>
-<body>
-   <div id="message">
-    Hello World
-   </div>
-  <div>
-     <button type="button" onclick="siqedile();">Click Here</button>
-     </div>
-     <script>
-        function siqedile(hello) {
-            hello = document.getElementById("message").innerHTML;
-            alert (hello);
-        }
-     </script>  
-</body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Student Data</h1>
+    <main>
+      <form id="studentForm">
+        <input type="text" placeholder="Student name" name="name" required />
+        <input type="number" placeholder="Student age" name="age" required />
+        <input type="number" placeholder="Student mark" name="mark" required />
+        <button>Add student</button>
+        <button>Delete</button>
+        <button>update</button>
+      </form>
+      <div class="students"></div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
 </html>
